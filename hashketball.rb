@@ -122,5 +122,6 @@ def num_points_scored(name)
         player[:points]
      end
    end
+  end
  end
 end
