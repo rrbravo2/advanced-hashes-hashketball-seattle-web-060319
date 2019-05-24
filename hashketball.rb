@@ -116,6 +116,5 @@ def game_hash
  end
 
 def num_points_scored(name)
-  name_data = player_data(name)
-  return name_data[:points]
+
  end
