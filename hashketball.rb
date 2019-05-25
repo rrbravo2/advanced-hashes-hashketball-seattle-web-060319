@@ -153,4 +153,20 @@ def team_names
    teams << info[:team_name]
   end
   teams
-end  
+end
+
+def player_numbers(team_name)
+ jersey_numbers =[]
+ game_hash.each do |teams_playing, info|
+   info.each do |attribute, team_data|
+     if info[team_name] == team_name
+       if attribute == :players
+         info.each do |player, stats|
+           jersey_numbers << stats[:number]
+         end
+       end
+     end
+   end
+ end
+   jersey_numbers
+end
