@@ -143,4 +143,4 @@ def team_colors(team)
      end
    end
  end
-end 
+end
